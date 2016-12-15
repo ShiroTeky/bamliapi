@@ -29,7 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -88,6 +88,22 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="PeopLost.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PeopLost.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PeopLost.Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PeopLost.Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="PeopLost.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PeopLost.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PeopLost.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PeopLost.Service.dll</HintPath>
     </Reference>
     <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
       <HintPath>..\packages\Swashbuckle.Core.5.5.3\lib\net40\Swashbuckle.Core.dll</HintPath>
@@ -1163,24 +1179,6 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PeopLost.Core\PeopLost.Core.csproj">
-      <Project>{6c9a3f37-a166-48a4-9b76-80f5b8fbd20f}</Project>
-      <Name>PeopLost.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PeopLost.Dapper\PeopLost.Dapper.csproj">
-      <Project>{c97b421c-708d-490a-9903-6c7330686d03}</Project>
-      <Name>PeopLost.Dapper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PeopLost.Data\PeopLost.Data.csproj">
-      <Project>{6abaeb8f-a47c-44da-adbe-1f3ff32c8912}</Project>
-      <Name>PeopLost.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PeopLost.Service\PeopLost.Service.csproj">
-      <Project>{29c17c58-1f0c-497d-9520-c3b8ea1488dc}</Project>
-      <Name>PeopLost.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
